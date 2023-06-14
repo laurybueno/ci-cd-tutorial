@@ -10,14 +10,14 @@ spec:
     image: mlrun/mlrun
     handler: data_fetch
     with_repo: true
-    tag: v2
+    tag: v3
   - url: ./src/train.py
     name: train
     kind: job
     image: mlrun/mlrun
     handler: train
     with_repo: true
-    tag: v2
+    tag: v3
   - url: ./function_spec/serving.yaml
     name: serving
   workflows:
@@ -29,7 +29,7 @@ spec:
       project: new-ci-cd-proj-shapira
       key: model-test
     spec:
-      target_path: v2io:///projects/new-ci-cd-proj-shapira/artifacts/a5d545c6-fd5d-44e8-966c-24b9261314be/train/0/model/
+      target_path: v3io:///projects/new-ci-cd-proj-shapira/artifacts/a5d545c6-fd5d-44e8-966c-24b9261314be/train/0/model/
       model_file: model.pkl
     status:
       state: created
