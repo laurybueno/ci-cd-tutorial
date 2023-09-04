@@ -1,8 +1,9 @@
 kind: project
 metadata:
-  name: new-ci-cd-proj-shapira
+  name: my-load-proj-laury
   created: '2023-04-17T13:27:10.756000'
 spec:
+  description: my description
   functions:
   - url: ./src/data_fetch.py
     name: data-fetch
@@ -34,9 +35,13 @@ spec:
     status:
       state: created
   conda: ''
-  source: git://github.com/GiladShapira94/example-ci-cd.git#master
-  origin_url: git://github.com/GiladShapira94/example-ci-cd.git#refs/heads/master
+  source: git://github.com/laurybueno/ci-cd-tutorial.git#refs/heads/main
+  origin_url: git://github.com/laurybueno/ci-cd-tutorial.git#refs/heads/main
   load_source_on_run: true
   desired_state: online
+  build:
+    commands: []
+    requirements: []
+  custom_packagers: []
 status:
   state: online
