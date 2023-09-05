@@ -3,7 +3,7 @@ metadata:
   name: my-load-proj-laury
   created: '2023-04-17T13:27:10.756000'
 spec:
-  description: my description updated
+  description: my description updated again
   functions:
   - url: ./src/data_fetch.py
     name: data-fetch
