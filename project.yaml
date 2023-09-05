@@ -1,9 +1,9 @@
 kind: project
 metadata:
-  name: my-load-proj-laury
+  name: my-load-proj-jovyan
   created: '2023-04-17T13:27:10.756000'
 spec:
-  description: my description updated agains
+  description: my descriptions
   functions:
   - url: ./src/data_fetch.py
     name: data-fetch
