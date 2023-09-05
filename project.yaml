@@ -3,7 +3,7 @@ metadata:
   name: my-load-proj-jovyan
   created: '2023-04-17T13:27:10.756000'
 spec:
-  description: my descriptions
+  description: my descriptionssss
   functions:
   - url: ./src/data_fetch.py
     name: data-fetch
